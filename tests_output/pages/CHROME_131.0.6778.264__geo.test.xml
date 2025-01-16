@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="pages.geo.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="2" time="1.694" timestamp="">
+  
+    <testcase name="should render the header correctly" classname="pages.geo.test" time="0.2640" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should render the main sections correctly" classname="pages.geo.test" time="0.1300" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
