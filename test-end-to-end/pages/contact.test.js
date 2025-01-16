@@ -2,7 +2,8 @@ describe('Contact Page End-to-End Tests', function () {
 
   before(async function (browser) {
     // Navigate to the contact page
-    await browser.navigateTo('http://127.0.0.1:9090/contact');
+    await browser.navigateTo('http://127.0.0.1:9090/contact')
+    .window.maximize();
   });
 
   after(function (browser) {

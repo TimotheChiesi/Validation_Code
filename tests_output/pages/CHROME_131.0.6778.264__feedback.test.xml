@@ -5,9 +5,9 @@
 
   <testsuite name="pages.feedback.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="3" time="10.53" timestamp="">
+    tests="3" time="11.25" timestamp="">
   
-    <testcase name="should render the feedback form" classname="pages.feedback.test" time="0.2570" assertions="4">
+    <testcase name="should render the feedback form" classname="pages.feedback.test" time="0.6390" assertions="4">
 
     
 
@@ -18,7 +18,7 @@
     
     </testcase>
   
-    <testcase name="should submit a feedback form successfully" classname="pages.feedback.test" time="2.520" assertions="3">
+    <testcase name="should submit a feedback form successfully" classname="pages.feedback.test" time="2.544" assertions="3">
 
     
 
@@ -27,7 +27,7 @@
     
     </testcase>
   
-    <testcase name="should not allow form submission with no name" classname="pages.feedback.test" time="2.325" assertions="2">
+    <testcase name="should not allow form submission with no name" classname="pages.feedback.test" time="2.253" assertions="2">
 
     
 

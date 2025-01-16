@@ -5,14 +5,14 @@
 
   <testsuite name="pages.login.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="2" time="10.20" timestamp="">
+    tests="2" time="10.05" timestamp="">
   
-    <testcase name="should not allow form submission with no name" classname="pages.login.test" time="2.588" assertions="1">
+    <testcase name="should not allow form submission with no name" classname="pages.login.test" time="2.612" assertions="1">
 
     
     </testcase>
   
-    <testcase name="should not allow form submission with no password" classname="pages.login.test" time="2.282" assertions="1">
+    <testcase name="should not allow form submission with no password" classname="pages.login.test" time="2.168" assertions="1">
 
     
     </testcase>

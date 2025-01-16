@@ -2,7 +2,8 @@ describe('Feedback Page End-to-End Tests', function () {
   
   before(async function (browser) {
     // Navigate to the feedback page
-    await browser.navigateTo('http://127.0.0.1:9090/feedback');
+    await browser.navigateTo('http://127.0.0.1:9090/feedback')
+    .window.maximize();
   });
 
   after(function (browser) {

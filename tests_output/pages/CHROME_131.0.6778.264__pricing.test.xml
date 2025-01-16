@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
-            tests="1">
+            failures="0"
+            tests="2">
 
   <testsuite name="pages.pricing.test"
-    errors="0" failures="1" hostname="" id="" package="pages" skipped="1"
-    tests="1" time="11.30" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="2" time="1.258" timestamp="">
   
-    <testcase name="should load the pricing page and check sections" classname="pages.pricing.test" time="5.420" assertions="3">
+    <testcase name="should load the pricing page and check main section" classname="pages.pricing.test" time="0.2040" assertions="6">
 
     
 
-      <failure message="Header title is displayed correctly in 5000ms - expected &#34;contains text &#39;UN PRIX POUR TOUTES LES SAISONS&#39;&#34; but got: &#34;does not contain &#39;UN PRIX POUR TOUTES LES SAISONS&#39;&#34; (5265ms)">    at DescribeInstance.&lt;anonymous&gt; (/home/tim/Documents/Cours/S7/Validation_Code/tchatbot_project/test-end-to-end/pages/pricing.test.js:16:17)</failure>
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should load the pricing page and check pricing section" classname="pages.pricing.test" time="0.1670" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>
@@ -21,13 +44,6 @@
 
     
 
-  
-    
-    <testcase
-      name="should check pricing section" classname="pages.pricing.test">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>

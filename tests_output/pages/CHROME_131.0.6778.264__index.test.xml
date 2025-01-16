@@ -5,9 +5,9 @@
 
   <testsuite name="pages.index.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="4" time="8.835" timestamp="">
+    tests="4" time="2.215" timestamp="">
   
-    <testcase name="Verify Header Section" classname="pages.index.test" time="1.009" assertions="5">
+    <testcase name="should verify the header section" classname="pages.index.test" time="0.1640" assertions="5">
 
     
 
@@ -20,14 +20,14 @@
     
     </testcase>
   
-    <testcase name="Verify Apartment Gallery" classname="pages.index.test" time="1.109" assertions="2">
+    <testcase name="should verify the apartment gallery" classname="pages.index.test" time="0.03700" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Verify Characteristics Section" classname="pages.index.test" time="1.048" assertions="7">
+    <testcase name="should verify the characteristics section" classname="pages.index.test" time="0.1390" assertions="7">
 
     
 
@@ -44,7 +44,7 @@
     
     </testcase>
   
-    <testcase name="Verify Contact Navigation" classname="pages.index.test" time="1.249" assertions="2">
+    <testcase name="should navigate to the contact page when clicking the contact button" classname="pages.index.test" time="0.1820" assertions="2">
 
     
 

@@ -2,7 +2,8 @@ describe('Geo Page End-to-End Tests', function () {
 
     before(async function (browser) {
       // Navigate to the geo page
-      await browser.navigateTo('http://127.0.0.1:9090/geo'); // Replace with your actual geo page URL
+      await browser.navigateTo('http://127.0.0.1:9090/geo')
+      .window.maximize();
     });
   
     after(function (browser) {
@@ -31,5 +32,7 @@ describe('Geo Page End-to-End Tests', function () {
           'Google Maps iframe has correct source'
         );
     });
+
+    
   });
   

@@ -53,7 +53,8 @@ Here is the lists of tests I made for each page:
 
 4. **Verify Contact Navigation**:
   - Charge the page.
-  - Verify that the contact section is OK.
+  - Click on the "Contactez-nous" button.
+  - Verify that we land on /contact URL.
 
 
 ### Feedback
@@ -134,10 +135,10 @@ Here is the lists of tests I made for each page:
 
 ## Pricing
 
-1. **should render the header correctly**:
-  - Visit the geo page URL.
-  - Check for the correct header.
+1. **should load the pricing page and check main section**:
+  - Visit the pricing page URL.
+  - Verify the main section.
 
-2. **should render the main sections correctly**:
-  - Visit the geo page URL.
-  - Check for the presence of the main section.
+2. **should load the pricing page and check pricing section**:
+  - Visit the pricing page URL.
+  - Verify each card of the pricing section.
