@@ -47,12 +47,12 @@ describe('Contact Page End-to-End Tests', function () {
       .assert.valueEquals('textarea[name="message"]', '', 'Message field is empty')
   });
 
-  it('should not allow form submission with invalid email', function (browser) {
+  it('should not allow form submission with no first name', function (browser) {
     browser
-      .setValue('input[name="firstName"]', 'Jean')
+      .setValue('input[name="firstName"]', '') // Empty first name
       .setValue('input[name="lastName"]', 'Louis')
       .setValue('input[name="mobilePhone"]', '0612345678')
-      .setValue('input[name="email"]', 'invalid-email') // Invalid email
+      .setValue('input[name="email"]', 'jean.louis@email.com')
       .setValue('input[name="arrivedAt"]', '2025-01-20')
       .setValue('input[name="departureAt"]', '2025-01-25')
       .setValue('textarea[name="message"]', 'Looking forward to visiting!')
@@ -61,7 +61,24 @@ describe('Contact Page End-to-End Tests', function () {
       })
       .click('button[type="submit"]')
       .pause(2000) // Adjust based on backend response time
-      .assert.attributeContains('input[name="email"]', 'validationMessage', "Please include an '@' in the email address. 'invalid-email' is missing an '@'.")
+      .assert.attributeContains('input[name="firstName"]', 'validationMessage', 'Please fill out this field.')
+  });
+
+  it('should not allow form submission with no last name', function (browser) {
+    browser
+      .setValue('input[name="firstName"]', 'Jean')
+      .setValue('input[name="lastName"]', '') // Empty last name
+      .setValue('input[name="mobilePhone"]', '0612345678')
+      .setValue('input[name="email"]', 'jean.louis@email.com')
+      .setValue('input[name="arrivedAt"]', '2025-01-20')
+      .setValue('input[name="departureAt"]', '2025-01-25')
+      .setValue('textarea[name="message"]', 'Looking forward to visiting!')
+      .execute(function() {
+        document.querySelector('button[type="submit"]').scrollIntoView();
+      })
+      .click('button[type="submit"]')
+      .pause(2000) // Adjust based on backend response time
+      .assert.attributeContains('input[name="lastName"]', 'validationMessage', 'Please fill out this field.')
   });
 
   it('should not allow form submission with no phone number', function (browser) {
@@ -79,5 +96,22 @@ describe('Contact Page End-to-End Tests', function () {
       .click('button[type="submit"]')
       .pause(2000) // Adjust based on backend response time
       .assert.attributeContains('input[name="mobilePhone"]', 'validationMessage', 'Please fill out this field.')
+  });
+
+  it('should not allow form submission with invalid email', function (browser) {
+    browser
+      .setValue('input[name="firstName"]', 'Jean')
+      .setValue('input[name="lastName"]', 'Louis')
+      .setValue('input[name="mobilePhone"]', '0612345678')
+      .setValue('input[name="email"]', 'invalid-email') // Invalid email
+      .setValue('input[name="arrivedAt"]', '2025-01-20')
+      .setValue('input[name="departureAt"]', '2025-01-25')
+      .setValue('textarea[name="message"]', 'Looking forward to visiting!')
+      .execute(function() {
+        document.querySelector('button[type="submit"]').scrollIntoView();
+      })
+      .click('button[type="submit"]')
+      .pause(2000) // Adjust based on backend response time
+      .assert.attributeContains('input[name="email"]', 'validationMessage', "Please include an '@' in the email address. 'invalid-email' is missing an '@'.")
   });
 });

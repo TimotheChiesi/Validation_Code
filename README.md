@@ -91,19 +91,33 @@ There is also a small screenshot of my test results.
   - Click the submit button.
   - Verify that fields has been emptied.
 
-3. **should not allow form submission with invalid email**:
+3. **should not allow form submission with no first name**:
   - Visit the contact page URL.
-  - Fill out all input field but with an invalid email.
+  - Fill out all input field except first name.
   - Fill out the "message" textarea.
   - Try to click the submit button.
-  - Verify that we have a validation message for the email.
+  - Verify that we have a validation message for the first name.
 
-4. **should not allow form submission with no phone number**:
+4. **should not allow form submission with no last name**:
+  - Visit the contact page URL.
+  - Fill out all input field except last name.
+  - Fill out the "message" textarea.
+  - Try to click the submit button.
+  - Verify that we have a validation message for the last name.
+
+5. **should not allow form submission with no phone number**:
   - Visit the contact page URL.
   - Fill out all input field except phone number.
   - Fill out the "message" textarea.
   - Try to click the submit button.
   - Verify that we have a validation message for the phone number.
+
+6. **should not allow form submission with invalid email**:
+  - Visit the contact page URL.
+  - Fill out all input field but with an invalid email.
+  - Fill out the "message" textarea.
+  - Try to click the submit button.
+  - Verify that we have a validation message for the email.
 
 
 ### Login
@@ -146,7 +160,7 @@ There is also a small screenshot of my test results.
   - Check for the presence of the main section.
 
 
-## Pricing
+### Pricing
 
 1. **should load the pricing page and check main section**:
   - Visit the pricing page URL.
