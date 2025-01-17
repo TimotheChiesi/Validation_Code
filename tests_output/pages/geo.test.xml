@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="pages.geo.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="5"
+    tests="0" time="0" timestamp="">
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="should render the header correctly" classname="pages.geo.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should render the main sections correctly" classname="pages.geo.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check Voiture section" classname="pages.geo.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check Voiture section" classname="pages.geo.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check Avion section" classname="pages.geo.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

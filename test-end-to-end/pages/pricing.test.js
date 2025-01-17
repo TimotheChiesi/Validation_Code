@@ -25,15 +25,10 @@ describe('Pricing Page End-to-End Tests', function () {
         .waitForElementVisible('body', 1000)
         .useXpath()
         .assert.textContains('/html/body/main/section[1]/div/div[1]/div/div/h5', 'Basse saison')
-        .useXpath()
         .assert.visible('/html/body/main/section[1]/div/div[1]/div/div/div[2]/a', 'Contact button for "Basse saison" is visible and clickable')
-        .useXpath()
         .assert.textContains('/html/body/main/section[1]/div/div[2]/div/div/h5', 'Moyenne saison')
-        .useXpath()
         .assert.visible('/html/body/main/section[1]/div/div[2]/div/div/div[2]/a', 'Contact button for "Moyenne saison" is visible and clickable')
-        .useXpath()
         .assert.textContains('/html/body/main/section[1]/div/div[3]/div/div/h5', 'Haute saison')
-        .useXpath()
         .assert.visible('/html/body/main/section[1]/div/div[3]/div/div/div[2]/a', 'Contact button for "Haute saison" is visible and clickable')
     });
 });

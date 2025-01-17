@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="3">
+            failures="1"
+            tests="1">
 
   <testsuite name="pages.feedback.test"
-    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="3" time="11.25" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="pages" skipped="2"
+    tests="1" time="10.76" timestamp="">
   
-    <testcase name="should render the feedback form" classname="pages.feedback.test" time="0.6390" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="should submit a feedback form successfully" classname="pages.feedback.test" time="2.544" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="should not allow form submission with no name" classname="pages.feedback.test" time="2.253" assertions="2">
-
-    
+    <testcase name="should render the feedback form" classname="pages.feedback.test" time="5.210" assertions="1">  <failure message="Feedback form is visible - expected &#34;visible&#34; but got: &#34;not found&#34; (5149ms)">    at DescribeInstance.&lt;anonymous&gt; (/home/tim/Documents/Cours/S7/Validation_Code/tchatbot_project/test-end-to-end/pages/feedback.test.js:15:8)</failure>
 
     
     </testcase>
@@ -39,6 +17,18 @@
 
     
 
+  
+    
+    <testcase
+      name="should submit a feedback form successfully" classname="pages.feedback.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should not allow form submission with no name" classname="pages.feedback.test">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

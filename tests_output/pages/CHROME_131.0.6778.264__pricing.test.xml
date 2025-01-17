@@ -5,9 +5,9 @@
 
   <testsuite name="pages.pricing.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="2" time="1.258" timestamp="">
+    tests="2" time="1.548" timestamp="">
   
-    <testcase name="should load the pricing page and check main section" classname="pages.pricing.test" time="0.2040" assertions="6">
+    <testcase name="should load the pricing page and check main section" classname="pages.pricing.test" time="0.3480" assertions="6">
 
     
 
@@ -22,7 +22,7 @@
     
     </testcase>
   
-    <testcase name="should load the pricing page and check pricing section" classname="pages.pricing.test" time="0.1670" assertions="7">
+    <testcase name="should load the pricing page and check pricing section" classname="pages.pricing.test" time="0.2070" assertions="7">
 
     
 

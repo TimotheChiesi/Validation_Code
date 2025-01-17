@@ -5,9 +5,9 @@
 
   <testsuite name="pages.contact.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="4" time="28.70" timestamp="">
+    tests="4" time="30.72" timestamp="">
   
-    <testcase name="should render the contact form correctly" classname="pages.contact.test" time="0.4130" assertions="9">
+    <testcase name="should render the contact form correctly" classname="pages.contact.test" time="0.3630" assertions="9">
 
     
 
@@ -28,7 +28,7 @@
     
     </testcase>
   
-    <testcase name="should submit the form successfully" classname="pages.contact.test" time="7.605" assertions="7">
+    <testcase name="should submit the form successfully" classname="pages.contact.test" time="6.743" assertions="7">
 
     
 
@@ -45,12 +45,12 @@
     
     </testcase>
   
-    <testcase name="should not allow form submission with invalid email" classname="pages.contact.test" time="3.641" assertions="1">
+    <testcase name="should not allow form submission with invalid email" classname="pages.contact.test" time="5.270" assertions="1">
 
     
     </testcase>
   
-    <testcase name="should not allow form submission with no phone number" classname="pages.contact.test" time="2.444" assertions="1">
+    <testcase name="should not allow form submission with no phone number" classname="pages.contact.test" time="2.552" assertions="1">
 
     
     </testcase>
