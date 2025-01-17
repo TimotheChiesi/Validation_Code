@@ -5,9 +5,9 @@
 
   <testsuite name="pages.admin.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="2" time="3.052" timestamp="">
+    tests="2" time="9.253" timestamp="">
   
-    <testcase name="should load the admin page when authorized" classname="pages.admin.test" time="0.08100" assertions="3">
+    <testcase name="should load the admin page when authorized" classname="pages.admin.test" time="0.08200" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="should log out and redirect to the login page" classname="pages.admin.test" time="0.1020" assertions="2">
+    <testcase name="should log out and redirect to the login page" classname="pages.admin.test" time="2.935" assertions="2">
 
     
 

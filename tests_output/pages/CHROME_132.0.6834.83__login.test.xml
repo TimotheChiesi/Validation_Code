@@ -5,9 +5,9 @@
 
   <testsuite name="pages.login.test"
     errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
-    tests="4" time="13.97" timestamp="">
+    tests="4" time="23.07" timestamp="">
   
-    <testcase name="should load the login page and display the form" classname="pages.login.test" time="0.09800" assertions="5">
+    <testcase name="should load the login page and display the form" classname="pages.login.test" time="0.2010" assertions="5">
 
     
 
@@ -20,17 +20,17 @@
     
     </testcase>
   
-    <testcase name="should not allow form submission with no name" classname="pages.login.test" time="2.254" assertions="1">
+    <testcase name="should not allow form submission with no name" classname="pages.login.test" time="2.519" assertions="1">
 
     
     </testcase>
   
-    <testcase name="should not allow form submission with no password" classname="pages.login.test" time="2.198" assertions="1">
+    <testcase name="should not allow form submission with no password" classname="pages.login.test" time="2.197" assertions="1">
 
     
     </testcase>
   
-    <testcase name="should submit the form with valid credentials and navigate to /admin" classname="pages.login.test" time="2.204" assertions="1">
+    <testcase name="should submit the form with valid credentials and navigate to /admin" classname="pages.login.test" time="6.220" assertions="1">
 
     
     </testcase>

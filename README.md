@@ -35,7 +35,8 @@ npm run lint
 
 ## TP2 : E2E Test
 
-Here is the lists of tests I made for each page:
+Here is the lists of tests I made for each page. To run them I use the command ```npm run test-e2e--chrome```.
+There is also a small screenshot of my test results.
 
 
 ### Index
