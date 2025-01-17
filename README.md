@@ -107,19 +107,27 @@ Here is the lists of tests I made for each page:
 
 ### Login
 
-1. **should not allow form submission with no name**:
+1. **should load the login page and display the form**:
+  - Visit the login page URL.
+  - Check for the presence of the login form.
+  - Check for the presence of the name input.
+  - Check for the presence of the password input.
+  - Check for the presence of the submit button.
+  
+
+2. **should not allow form submission with no name**:
   - Visit the login page URL.
   - Fill out all input field except name.
   - Try to click the submit button.
   - Verify that we have a validation message for the name.
 
-2. **should not allow form submission with no password**:
+3. **should not allow form submission with no password**:
   - Visit the login page URL.
   - Fill out all input field except password.
   - Try to click the submit button.
   - Verify that we have a validation message for the password.
 
-3. **should submit the form with valid credentials and navigate to /admin**:
+4. **should submit the form with valid credentials and navigate to /admin**:
   - Visit the login page URL.
   - Fill out all input field.
   - Click the submit button.
@@ -146,3 +154,16 @@ Here is the lists of tests I made for each page:
 2. **should load the pricing page and check pricing section**:
   - Visit the pricing page URL.
   - Verify each card of the pricing section.
+
+
+### Admin
+
+1. **should load the admin page when authorized**:
+  - Visit the admin page URL.
+  - Check for the presence of the disconnect button.
+  - Check for the presence of the table.
+
+2. **should log out and redirect to the login page**:
+  - Visit the admin page URL.
+  - Click the disconnect button.
+  - Verify that we land on the login page.
