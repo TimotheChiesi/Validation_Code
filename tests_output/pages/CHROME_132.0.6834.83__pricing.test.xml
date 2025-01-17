@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="pages.pricing.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="2" time="1.436" timestamp="">
+  
+    <testcase name="should load the pricing page and check main section" classname="pages.pricing.test" time="0.2530" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should load the pricing page and check pricing section" classname="pages.pricing.test" time="0.1390" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

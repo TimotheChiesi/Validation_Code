@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="pages.admin.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="2" time="3.052" timestamp="">
+  
+    <testcase name="should load the admin page when authorized" classname="pages.admin.test" time="0.08100" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should log out and redirect to the login page" classname="pages.admin.test" time="0.1020" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

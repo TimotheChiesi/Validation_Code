@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="pages.login.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="4" time="13.97" timestamp="">
+  
+    <testcase name="should load the login page and display the form" classname="pages.login.test" time="0.09800" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should not allow form submission with no name" classname="pages.login.test" time="2.254" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="should not allow form submission with no password" classname="pages.login.test" time="2.198" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="should submit the form with valid credentials and navigate to /admin" classname="pages.login.test" time="2.204" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

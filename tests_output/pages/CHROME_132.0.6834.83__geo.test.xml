@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="pages.geo.test"
+    errors="0" failures="0" hostname="" id="" package="pages" skipped="0"
+    tests="7" time="2.922" timestamp="">
+  
+    <testcase name="should verify the header section" classname="pages.geo.test" time="0.1840" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should render the &#34;Voiture&#34; section correctly" classname="pages.geo.test" time="0.1090" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should render the &#34;Avion&#34; section correctly" classname="pages.geo.test" time="0.08500" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should render the &#34;Train&#34; section correctly" classname="pages.geo.test" time="0.08100" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should verify the &#34;Carte&#34; section" classname="pages.geo.test" time="0.04500" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should verify the &#34;A proximité&#34; section" classname="pages.geo.test" time="0.05300" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should verify the &#34;Nos meilleures adresses&#34; section" classname="pages.geo.test" time="0.1450" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

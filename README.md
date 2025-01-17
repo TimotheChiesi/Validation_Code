@@ -110,16 +110,20 @@ Here is the lists of tests I made for each page:
 1. **should not allow form submission with no name**:
   - Visit the login page URL.
   - Fill out all input field except name.
-  - Fill out the "message" textarea.
   - Try to click the submit button.
   - Verify that we have a validation message for the name.
 
 2. **should not allow form submission with no password**:
   - Visit the login page URL.
   - Fill out all input field except password.
-  - Fill out the "message" textarea.
   - Try to click the submit button.
   - Verify that we have a validation message for the password.
+
+3. **should submit the form with valid credentials and navigate to /admin**:
+  - Visit the login page URL.
+  - Fill out all input field.
+  - Click the submit button.
+  - Verify that we land on /admin page.
 
 
 ### Geo
