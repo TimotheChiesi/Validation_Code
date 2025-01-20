@@ -35,6 +35,8 @@ npm run lint
 
 ## TP3 : Tests Performance
 
+I have made 1000 request in 10 minutes to measure average response time.
+
 Average time for each page :
 
 - index.js : 9.19 ms
