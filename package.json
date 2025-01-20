@@ -9,7 +9,7 @@
     "api-start": "node ./api/index.js",
     "dist": "npx webpack --mode production --progress=profile",
     "lint": "eslint .",
-    "test-perf": "npx jest test-api/login.test.js --detectOpenHandles"
+    "test-perf": "npx jest test-api/ --detectOpenHandles"
   },
   "repository": {
     "type": "git",
