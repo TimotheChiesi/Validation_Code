@@ -41,5 +41,5 @@ Average time for each page :
 - pricing.js : 10.89 ms
 - geo.js : 8.153 ms
 - feedback.js : 7.928 ms
-- login.js : 
+- login.js : 11.25 ms
 - contact.js : 10.53 ms
