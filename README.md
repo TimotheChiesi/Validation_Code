@@ -32,3 +32,5 @@ Analyse the coding rules with :
 ```bash
 npm run lint
 ```
+
+## TP3 : Tests Performance
