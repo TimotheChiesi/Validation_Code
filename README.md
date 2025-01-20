@@ -35,8 +35,9 @@ npm run lint
 
 ## TP3 : Tests Performance
 
-Actuellement j'ai tester la page index mais les tests ne sont pas concluant
-
 Average time for each page :
 
-- index.js : 9.19ms
+- index.js : 9.19 ms
+- pricing.js : 10.89 ms
+- geo.js : 8.153 mS
+- feedback : 7.928 ms

@@ -2,9 +2,9 @@ import request from 'supertest';
 
 const baseUrl = 'http://127.0.0.1:9090';
 
-describe('Performance Tests for Index page', () => {
+describe('Performance Tests for Pricing Page', () => {
   it('should handle 1000 requests in 10 minutes and calculate average request time', async () => {
-    const endpoint = '/'; // Update this to the correct endpoint if needed
+    const endpoint = '/pricing'; // Update this to the correct endpoint if needed
     const totalRequests = 1000;
     const totalDuration = 10 * 60 * 1000; // 10 minutes in milliseconds
     const interval = totalDuration / totalRequests; // interval between requests
