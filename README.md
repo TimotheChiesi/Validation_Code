@@ -34,3 +34,5 @@ npm run lint
 ```
 
 ## TP3 : Tests Performance
+
+Actuellement j'ai tester la page index mais les tests ne sont pas concluant
