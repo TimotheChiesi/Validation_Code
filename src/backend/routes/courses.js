@@ -2,7 +2,7 @@ const express = require('express');
 const db = require('../db');
 const router = express.Router();
 
-// Obtener cursos por formador
+// Obtenir des cours par formateur
 router.get('/instructor/:instructorId', async (req, res) => {
     const { instructorId } = req.params;
 
@@ -19,7 +19,7 @@ router.get('/instructor/:instructorId', async (req, res) => {
     }
 });
 
-// Crear un nuevo curso
+// Creer un nouveau cours
 router.post('/', async (req, res) => {
     const { title, date, time, location, instructorId } = req.body;
 
@@ -41,7 +41,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Editar curso
+// Modifier un cours
 router.put('/:courseId', async (req, res) => {
     const { courseId } = req.params;
     const { title, date, time, location } = req.body;
@@ -69,7 +69,7 @@ router.put('/:courseId', async (req, res) => {
     }
 });
 
-// Supprimer un curso
+// Supprimer un cours
 router.delete('/:courseId', async (req, res) => {
     const { courseId } = req.params;
 
@@ -136,7 +136,7 @@ router.post('/reserve', async (req, res) => {
     }
 
     try {
-        // Verificar si el horario está disponible
+        // Verification de la disponobilité
         const availabilityCheck = await db.query(
             `SELECT * FROM courses WHERE instructor_id = $1 AND date = $2 AND time = $3`,
             [instructorId, date, time]
@@ -146,14 +146,14 @@ router.post('/reserve', async (req, res) => {
             return res.status(400).json({ error: 'Veuillez sélectionner un créneau disponible' });
         }
 
-        // Crear la reserva
+        // Creer la reservation
         const result = await db.query(
             `INSERT INTO courses (title, date, time, location, instructor_id, student_id) 
              VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`,
             [title, date, time, location, instructorId, studentId]
         );
 
-        // Notificar al formador
+        // Notifier le formateur
         await db.query(
             `INSERT INTO notifications (user_id, message) 
              VALUES ($1, $2)`,

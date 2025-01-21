@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 const router = express.Router();
 
-// Registro de usuario
+// Creation du compte utilisateur
 router.post('/register', async (req, res) => {
     const { email, password, confirmPassword, name, surname, userType, acceptTerms } = req.body;
 
@@ -46,7 +46,7 @@ router.post('/register', async (req, res) => {
     }
 });
 
-// Login de usuario
+// Login de l'utilisateur
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
 

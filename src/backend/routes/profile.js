@@ -2,27 +2,11 @@ const express = require('express');
 const db = require('../db');
 const router = express.Router();
 
-// Obtener perfil del usuario
-/*router.get('/:id', async (req, res) => {
-    const { id } = req.params;
-
-    try {
-        const result = await db.query('SELECT * FROM users WHERE id = $1', [id]);
-
-        if (result.rows.length === 0) {
-            return res.status(404).json({ error: 'Utilisateur non trouvé' });
-        }
-
-        res.status(200).json({ user: result.rows[0] });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Erreur lors de la récupération du profil' });
-    }
-});*/
+// Recuperation du profil de l'utilisateur
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
 
-    // Validar que `id` sea un número entero
+    // Vérification de l'identifiant
     if (!/^\d+$/.test(id)) {
         return res.status(400).json({ error: 'ID invalide. Veuillez fournir un identifiant numérique.' });
     }
@@ -41,7 +25,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// Actualizar perfil del usuario
+// Actualisation du profil de l'utilisateur
 router.put('/:id', async (req, res) => {
     const {
         about,
@@ -57,7 +41,7 @@ router.put('/:id', async (req, res) => {
     } = req.body;
     const { id } = req.params;
 
-    // Validar campos obligatorios para Formateur
+    // Validation des champs obligatoires pour le formateur
     if (user_type === 'Formateur') {
         if (!schedule || !price_per_hour || !course_location) {
             return res.status(400).json({ error: 'Veuillez remplir le champs domaine' });
