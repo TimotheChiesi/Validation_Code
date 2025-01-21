@@ -33,15 +33,4 @@ Analyse the coding rules with :
 npm run lint
 ```
 
-## TP3 : Tests Performance
-
-I have made 1000 request in 10 minutes to measure average response time.
-
-Average time for each page :
-
-- index.js : 9.19 ms
-- pricing.js : 10.89 ms
-- geo.js : 8.153 ms
-- feedback.js : 7.928 ms
-- login.js : 11.25 ms
-- contact.js : 10.53 ms
+## TP4 : Recettage
